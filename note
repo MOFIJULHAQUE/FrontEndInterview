@@ -1,0 +1,10 @@
+//how to replicate useEffect in React componentDidMount
+
+//componentDidMount:-- This method is self-explanatory, it runs once when the component is first mounted. It is important to remember that it runs after the render method is completed and the DOM is drawn. If you call an API in this lifecycle method, make sure that you have your loaders set up, otherwise the data will be empty on first-draw.
+
+// You can accomplish the same using the useEffect hook. It takes in two arguments: the function to run, and the dependencies to watch. For this use case, we do not want to run this piece of code twice, so we do not have any dependencies.
+
+// useEffect(() => {
+//   // code to run after first render
+//   const subscription = myTodoObservable.subscribe(() => { … })
+// }, []) // Empty array means only run this code once after render
