@@ -1,3 +1,55 @@
-body{
-    padding :15%;
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  justify-content: center;
+  /* background-color: rgb(47, 146, 100); */
+  align-content: space-between;
+}
+form {
+  margin-bottom: 10%;
+}
+.container form input {
+  margin: 2%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.container form input:focus {
+  outline: none;
+}
+
+
+
+
+.newData{
+    padding: 0%;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.inside_newData{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.name{
+    border: 0.1px solid black;
+    padding: 2%;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.newData button{
+    padding :2%;
+    border-radius: 5px;
+    border: none;
+
 }

@@ -14,10 +14,23 @@ function setLocalStorage() {
       newDiv.setAttribute("class", "newData");
 
       let htmlData = `
-        Name :- <span>${user.name}</span>
-        Password :- <span>${user.password}</span>
-        <button onClick="onDelete(${id})" >Delete</button>
-        <button onClick="onEdit(${id})" id="btnEdit">Edit</button>
+      <div class="inside_newData">
+      <div class="name">
+      
+      Name :- <span>${user.name}</span>
+      </div>
+      <div class="name">
+      
+      Password :- <span>${user.password}</span>
+      </div>
+      <div>
+
+      </div class="btn_section">
+      
+      <button onClick="onDelete(${id})" >Delete</button>
+      <button onClick="onEdit(${id})" id="btnEdit">Edit</button>
+      </div>
+
         `;
 
       //How thw the should be showing
