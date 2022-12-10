@@ -15,14 +15,17 @@ function setLocalStorage() {
 
       let htmlData = `
       <div class="inside_newData">
+
       <div class="name">
       
-      Name :- <span>${user.name}</span>
+            Name :- <span>${user.name}</span>
       </div>
-      <div class="name">
+
+      <div class="name1">
+       
+           Password :- <span>${user.password}</span>
+      </div>
       
-      Password :- <span>${user.password}</span>
-      </div>
       <div>
 
       </div class="btn_section">
@@ -33,7 +36,7 @@ function setLocalStorage() {
 
         `;
 
-      //How thw the should be showing
+      //How the the should be showing
       newDiv.insertAdjacentHTML("afterbegin", htmlData);
       showDiv.insertAdjacentElement("afterbegin", newDiv);
     });
@@ -52,11 +55,11 @@ function setLocalStorage() {
 //
 setTimeout(() => {
   setLocalStorage();
-}, 3);
+}, 30);
 
-//CRUD operation add submit / add function
+//CRUD operation add submit / add function----------------------------------
 submitBtn.addEventListener("click", (e) => {
-  e.preventDefault(); //stops the automatic form refreash
+  e.preventDefault(); //stops the automatic form refresh
 
   let arr = JSON.parse(localStorage.getItem("userData"));
 
@@ -80,37 +83,37 @@ submitBtn.addEventListener("click", (e) => {
   }
 });
 
-//delete opeartion
+//delete opeartion----------------------------------------------------
 
 function onDelete(id) {
-  let arr = JSON.parse(localStorage.getItem("userData"));
+  let arr = JSON.parse(localStorage.getItem("userData")); //access all data
 
-  let deleteData = [...arr];
+  let deleteData = [...arr]; // spred all data
 
-  deleteData.splice(id, 1);
+  deleteData.splice(id, 1); //select particular data on the basis of "id"
 
-  arr = [...deleteData];
+  arr = [...deleteData]; // spred all data
 
-  localStorage.setItem("userData", JSON.stringify(arr));
+  localStorage.setItem("userData", JSON.stringify(arr)); //update the localStorage
 
-  setLocalStorage();
+  setLocalStorage(); //call the function
 }
 
 //Edit operation-------------------------------------------------
 
 function onEdit(id) {
   // alert("JG")
-  let arr = JSON.parse(localStorage.getItem("userData"));
+  let arr = JSON.parse(localStorage.getItem("userData")); //access all data
 
-  let name = (document.querySelector("#name").value = arr[id].name);
+  let name = (document.querySelector("#name").value = arr[id].name); //access name
 
-  let password = (document.querySelector("#password").value = arr[id].password);
+  let password = (document.querySelector("#password").value = arr[id].password); //access password
 
-  submitBtn.setAttribute("disabled", true);
+  submitBtn.setAttribute("disabled", true); //disable submit form button because we not allow user to submit to during modifucation of existing todo data
 
-  let editBtn = document.createElement("button");
+  let editBtn = document.createElement("button"); //create new button
 
-  let form = document.querySelector("#form");
+  let form = document.querySelector("#form"); //access the form
 
   let btnEdit = document.querySelectorAll("#btnEdit");
 
