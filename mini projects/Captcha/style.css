@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(rgb(192, 248, 248),rgb(120, 245, 120),rgb(240, 119, 119),rgb(146, 146, 223));
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97.5vh;
+}
+input{
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(195, 255, 249);
+    border-radius: 20px;
+}
+button{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(aqua,rgb(107, 224, 107));
+    cursor: pointer;
+}
