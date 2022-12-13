@@ -99,7 +99,7 @@ function onDelete(id) {
   setLocalStorage(); //call the function
 }
 
-//Edit operation-------------------------------------------------
+//Edit operation---------------------------------------------------------------------------
 
 function onEdit(id) {
   // alert("JG")

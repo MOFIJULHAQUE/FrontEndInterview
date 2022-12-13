@@ -10,7 +10,6 @@
   align-items: center;
   padding: 1%;
   justify-content: center;
-  /* background-color: rgb(47, 146, 100); */
   align-content: space-between;
   height: 100vh;
 }
@@ -20,78 +19,64 @@ form {
 .container form input {
   margin: 2%;
   padding: 10px;
-  border-radius: 10px ;
+  border-radius: 10px;
   border: 2px solid black;
 }
 .container form input:hover {
- border-color:blue;
+  border-color: blue;
 }
 .container form input:focus {
   outline: none;
 }
-.btn input{
+.btn input {
   cursor: pointer;
 }
 
-
-
-
-.newData{
-    padding: 0%;
-    width: 450px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4%;
+.newData {
+  padding: 0%;
+  width: 450px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4%;
 }
-.inside_newData{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+.inside_newData {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.name{
-    border: 0.1px solid black;
-    padding: 2%;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    width: 150px;
-    margin-left: -2rem;
+.name {
+  border: 0.1px solid black;
+  padding: 2%;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  width: 150px;
+  margin-left: -2rem;
 }
-.name1{
+.name1 {
   border: 0.1px solid black;
   padding: 2%;
   border-radius: 5px;
   color: rgb(0, 0, 0);
   width: 150px;
 }
-.newData button{
-    padding :2%;
-    border-radius: 5px;
-    border: none;
-
+.newData button {
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
 }
 
-
-
-
-
-
-
-
-.btn{
+.btn {
   display: flex;
   justify-content: center;
 }
 
-
-
-.inside_newData button{
-background-color: rgb(110, 226, 239);
-font-weight: bold;
-cursor: pointer;
+.inside_newData button {
+  background-color: rgb(110, 226, 239);
+  font-weight: bold;
+  cursor: pointer;
 }
-.inside_newData button:hover{
+.inside_newData button:hover {
   background-color: rgb(44, 186, 113);
-
-  }
+}
