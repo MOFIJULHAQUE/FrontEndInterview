@@ -45,7 +45,7 @@
 
 
 // eg-2
-const curryingFunction = (first,second,third)=>{
-    return first+second+third;
-}
-console.log(curryingFunction(1,2,30));
+// const curryingFunction = (first,second,third)=>{
+//     return first+second+third;
+// }
+// console.log(curryingFunction(1,2,30));
