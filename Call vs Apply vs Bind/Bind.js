@@ -12,3 +12,5 @@ forPerson1("Your First Name is :- ", "Your Last Name is :- ");
 
 var forPerson2 = newfunction.bind(person2);
 forPerson2("Your First Name is :- ", "Your Last Name is :- ");
+console.log(person2);
+

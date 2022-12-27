@@ -9,20 +9,15 @@ const printNumber = () => {
   number.innerText = count;
 };
 
+const incrementCounter = () => {
+  count = count + 1;
+  printNumber();
+};
 
-const incrementCounter=()=>{
-count = count+1;
-printNumber();
-    
-}
+const decrementCounter = () => {
+  count = count - 1;
+  printNumber();
+};
 
-
-const decrementCounter=()=>{
-    count = count-1;
-    printNumber();
-        
-    }
-
-
-increment.addEventListener("click",incrementCounter)
-decrement.addEventListener("click",decrementCounter)
+increment.addEventListener("click", incrementCounter);
+decrement.addEventListener("click", decrementCounter);
