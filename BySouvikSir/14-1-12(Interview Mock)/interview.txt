@@ -1,0 +1,53 @@
+1. What is SSR(Server side Rendering)?
+
+Ans :- Server-side rendering (SSR) is a technique used in web development to pre-render a web page on the server and send the fully-rendered HTML to the client. This is in contrast to client-side rendering (CSR), where the browser renders the page using JavaScript after the initial HTML and CSS have been loaded.
+
+The main advantage of SSR is that it allows search engines to crawl and index the pages of a web application, which can lead to better SEO and improved performance for users with slow internet connections or low-end devices.
+
+When an user request a page, in SSR approach the server will process the request, rendering the React components and returning the generated HTML to the browser. The browser will then be able to display the content of the page to the user without waiting for JavaScript to execute.
+
+However, SSR is more complex to implement and maintain than CSR, and it can also lead to increased server load and decreased performance for users with fast internet connections.
+
+It is also worth mentioning that there is a technique called Hybrid rendering, where the server does the initial rendering and then the client takes over, this way the user can see the content immediately and the client can continue to update the page with JavaScript.
+
+---------------------------------------------------------------------------------------------------------
+
+2. What is Cookies ?
+Ans :- Cookies are small text files that are stored on the client-side (the user's computer) by a web server. They are used to persist data across sessions, and can be used for a variety of purposes such as authentication, storing user preferences, and tracking user behavior.
+
+In JavaScript, cookies can be accessed using the document.cookie property. This property allows you to read, write, and delete cookies.
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+3. Redux vs Context API.
+Ans :- Both Redux and the Context API in React are used for managing state in a React application. However, they are implemented differently.
+           If you are building a complex application, or you have a lot of components that need to share state, then Redux might be a better choice. But if you have a smaller application or you only need to share state between a few components, the Context API might be more appropriate.
+
+---------------------------------------------------------------------------------------------------------
+
+
+4. What is Redux ?
+Ans :- Redux is a JavaScript library that is commonly used with React for managing application state. It follows the principles of the "Flux" architecture, which is designed to handle the complexity of building large-scale, data-driven web applications.
+
+Redux is composed of three main elements:
+
+Store: The store is the central location where the entire state of the application is stored. The store can only be updated by dispatching actions, which are plain JavaScript objects that describe the change that should be made to the state.
+
+Actions: Actions are plain JavaScript objects that describe the change that should be made to the state. They are dispatched to the store and then processed by the reducers, which are responsible for updating the state in response to an action.
+
+Reducers: Reducers are pure functions that take in the current state of the application and an action, and then return a new state. They are responsible for updating the state in response to an action.
+
+One of the main advantages of Redux is that it makes it easy to manage the state of a complex application, and it also makes it easy to debug and test the application, since all state updates are triggered by actions and processed by reducers.
+
+Another advantage is that it makes it possible to implement features such as "undo" and "redo" functionality, since all state changes are stored in an immutable history.
+
+In summary, Redux is a predictable state container for JavaScript apps that helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+

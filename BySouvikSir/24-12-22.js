@@ -1,4 +1,4 @@
-//Call back Function ---- I can't able to answer it
+//Call back Function ------->  I can't able to answer it
 
 //eg-1
 // let x = 2;
@@ -14,7 +14,7 @@
 // }, 2000);
 //___________________________________________________________________________________
 
-//Closure---able to answer
+//Closure     --->     able to answer
 //eg-1
 // function first(){
 //   let element = 20;
@@ -42,7 +42,6 @@
 //   return first + second + third;
 // };
 // console.log(curryingFunction(20)(30)(40));
-
 
 // eg-2
 // const curryingFunction = (first,second,third)=>{
