@@ -1,0 +1,14 @@
+
+
+.conatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+  background-color: gray;
+  margin: 1rem;
+  width: 20px;
+  height: 20px;
+}
+

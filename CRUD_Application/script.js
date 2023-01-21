@@ -83,7 +83,7 @@ submitBtn.addEventListener("click", (e) => {
   }
 });
 
-//delete opeartion----------------------------------------------------
+//delete opeartion--------------------------------------------------
 
 function onDelete(id) {
   let arr = JSON.parse(localStorage.getItem("userData")); //access all data

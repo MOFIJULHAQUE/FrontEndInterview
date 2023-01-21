@@ -38,7 +38,7 @@
 // console.time()
 // console.log(output(4))
 // console.timeEnd()
-
+// ====================================================================================================================================
 // function func2(){
 //   for(var i = 0; i < 3; i++){
 //     setTimeout(()=> console.log(i),2000);
@@ -49,12 +49,12 @@
 // let a = 0; let b = false; console.log((a == b)); console.log((a === b));//true false
 
 //
-function func1() {
-  setTimeout(() => {
-    console.log(x);
-    console.log(y);
-  }, 3000);
-  var x = 2;
-  let y = 12;
-}
-func1(); //2 , 12
+// function func1() {
+//   setTimeout(() => {
+//     console.log(x);
+//     console.log(y);
+//   }, 3000);
+//   var x = 2;
+//   let y = 12;
+// }
+// func1(); //2 , 12
