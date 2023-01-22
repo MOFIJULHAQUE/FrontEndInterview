@@ -24,6 +24,7 @@ function setLocalStorage() {
       <div class="name1">
        
            Password :- <span>${user.password}</span>
+           
       </div>
       
       <div>
