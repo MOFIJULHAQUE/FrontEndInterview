@@ -1,0 +1,23 @@
+In JavaScript, an attribute and a property are both used to store information about an HTML element, but they are used in different ways and have different characteristics.
+
+An attribute is a value that is set on an HTML element, and it is used by the browser to determine the default properties of an element. For example, the value attribute of an <input> element is used to set the default value of the input, and the src attribute of an <img> element is used to set the default source of the image.
+
+A property, on the other hand, is a value that is set on the JavaScript object that represents an HTML element. Properties can be accessed and modified using JavaScript, and they reflect the current state of the element. For example, the value property of an <input> element reflects the current value of the input, and the src property of an <img> element reflects the current source of the image.
+
+Here is an example to illustrate the difference:
+<input id="myInput" type="text" value="Initial Value">
+
+let input = document.getElementById("myInput");
+console.log(input.getAttribute("value")); // "Initial Value"
+console.log(input.value); // "Initial Value"
+
+input.value = "Changed Value";
+console.log(input.getAttribute("value")); // "Initial Value"
+console.log(input.value); // "Changed Value"
+
+In the example above, the value attribute sets the default value of the input, while the value property reflects the current value of the input. Changing the value property of the input also changes the value that is displayed in the input, but it does not change the value attribute.
+
+It's important to note that some properties and attributes have a one-to-one correspondence, meaning that changing the property also changes the attribute, and vice versa. However, this is not always the case, and it's good practice to always use the appropriate property or attribute depending on what you're trying to achieve.
+
+
+

@@ -1,0 +1,12 @@
+.item {
+    padding: 2rem;
+    background-color: rgb(78, 29, 29);
+
+}
+
+
+span {
+    background-color: aqua;
+    width: 140px;
+    height: 190px;
+}
