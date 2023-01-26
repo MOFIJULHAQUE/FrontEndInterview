@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Event delegation is a technique in which we attach a single event listener to a parent element, and then use
+        logic to determine which child element the event occurred on.</h1>
+    <p>Event delegation is a technique in which an event handler is added to a parent element rather than to individual
+        child elements. The event handler will then check the target of the event to determine if it should take any
+        action. This can be more efficient than adding event handlers to many child elements, especially if the child
+        elements are dynamically added or removed from the page.</p>
+    <ul id="list">
+        <span>Item 0</span>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <script src="./delegation.js"></script>
+</body>
+
+</html>
