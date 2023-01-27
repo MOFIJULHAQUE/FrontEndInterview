@@ -18,7 +18,6 @@ function App() {
         <br />
         <li>
           <context.Provider value={data}>
-
             <CompA />
           </context.Provider>
         </li>
@@ -28,4 +27,4 @@ function App() {
 }
 
 export default App;
-export {context};
+export { context };

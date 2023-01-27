@@ -8,6 +8,7 @@ const TodoApp = () => {
         if (input === "") return;
         setTodo([...todo, input])
         setInput("");
+        
     }
     const handleDelete = (index) => {
         const newTodo = [...todo];
