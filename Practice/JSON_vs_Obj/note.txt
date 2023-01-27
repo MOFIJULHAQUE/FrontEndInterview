@@ -1,0 +1,5 @@
+===> In object in JavaScript is a collection of key-value pairs, where the keys are strings and the values can be of any type. but In JSON keys must be strings and values can only be strings, numbers, booleans, null, arrays, or other JSON objects.
+
+===> JSON and objects in JavaScript are similar in terms of the syntax and structure, but JSON is primarily used for data interchange, while objects are used as a data structure within JavaScript.
+
+===> While objects and JSON are similar in syntax, JSON is often used for data interchange between different systems or programming languages, whereas objects are used as a data structure within JavaScript. JSON.stringify() function is used to convert a JavaScript object to a JSON string, and JSON.parse() function is used to convert a JSON string to a JavaScript object.

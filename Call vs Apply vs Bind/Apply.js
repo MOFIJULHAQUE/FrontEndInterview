@@ -1,3 +1,7 @@
+// The call() method in JavaScript is a method of the Function object. It allows you to call a function with a specified 'this' value and arguments provided inside array.
+
+
+
 var person1 = { firstName: "Titis", lastName: "Roy" };
 var person2 = { firstName: "Java", lastName: "Script " };
 
