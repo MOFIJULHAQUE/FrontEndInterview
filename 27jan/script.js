@@ -19,9 +19,10 @@
 //  const response = await api.then();
 //  console.log(5);
 // }
-
-
-// this in arrow.
+//=============
+//call by value & call by reference
+//deep copy and shallow copy
+// this in arrow.    
 // event propagation.
 // how to make a modal
 // todo app in vanila and react

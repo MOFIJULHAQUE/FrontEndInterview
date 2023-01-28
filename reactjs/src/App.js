@@ -2,6 +2,8 @@ import { useState, createContext } from "react";
 import TodoApp from "./Todo/TodoApp";
 import CompA from "./ContextTopic/CompA"
 import Main from "./Modal/Main";
+import Timer from "./Timer/Timer"
+import "./Modal/style.css";
 
 const context = createContext();
 
@@ -23,8 +25,13 @@ function App() {
           </context.Provider>
         </li>
         <li>
-          <Main/>
+          <Timer/>
         </li>
+        <li>
+        {/* Modal */}
+          <Main />
+        </li>
+        
       </ul>
     </div>
   );

@@ -1,0 +1,13 @@
+
+A data list is an array of values. It can be used to store a set of related items.
+
+Example:
+
+// Create a data list 
+var dataList = [1, 2, 3, 4, 5]; 
+
+// Access the first element in the list 
+var firstElement = dataList[0]; // Outputs 1 
+
+// Add a new element to the list 
+dataList.push(6); // Outputs [1, 2, 3, 4, 5, 6]

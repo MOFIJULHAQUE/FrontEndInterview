@@ -1,9 +1,10 @@
 // Async and await are two keywords in JavaScript that are used to handle asynchronous code. Asynchronous code is code that runs in the background while the main program continues to execute.
 
 // Here is an example of using async and await to handle a promise:
+// =================
 async function getData() {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
         const data = await response.json();
         console.log(data);
     } catch (error) {
@@ -12,6 +13,19 @@ async function getData() {
 }
 
 getData();
+// ====================
+
+
+// Async/Await is a new way to write asynchronous code in JavaScript. It is built on top of promises, and it makes asynchronous code look and behave a lot like synchronous code.
+
+// Example:
+const fetchData = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const data = await response.json();
+
+    console.log(data);
+}
+fetchData();
 
 // In this example, the function getData() is declared as async. Inside the function, we use the await keyword to wait for the promise returned by the fetch function to resolve. Once the promise resolves, we can then use the json() method to parse the response and access the data.
 
