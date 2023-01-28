@@ -17,7 +17,7 @@ obj.sayName(); // undefined (instead of "John")
 
 let obj1 = {
     name: 'John',
-    sayName: function () {
+    sayName: () => {
         console.log(this.name);
     }
 };

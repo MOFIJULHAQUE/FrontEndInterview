@@ -13,4 +13,4 @@ submitBtn.addEventListener("click", (e) => {
   li.innerText = taskInput;
   addTask.appendChild(li);
   task.value = "";
-})
+});

@@ -1,6 +1,7 @@
 import { useState, createContext } from "react";
 import TodoApp from "./Todo/TodoApp";
 import CompA from "./ContextTopic/CompA"
+import Main from "./Modal/Main";
 
 const context = createContext();
 
@@ -20,6 +21,9 @@ function App() {
           <context.Provider value={data}>
             <CompA />
           </context.Provider>
+        </li>
+        <li>
+          <Main/>
         </li>
       </ul>
     </div>

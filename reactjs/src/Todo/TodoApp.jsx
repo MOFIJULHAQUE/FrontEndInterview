@@ -3,18 +3,23 @@ import React, { useState } from 'react'
 const TodoApp = () => {
     const [todo, setTodo] = useState([]);
     const [input, setInput] = useState("");
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (input === "") return;
         setTodo([...todo, input])
-        setInput("");
-        
+        setInput("");      
     }
     const handleDelete = (index) => {
         const newTodo = [...todo];
         newTodo.splice(index, 1);
         setTodo(newTodo);
     }
+    // try
+//     const handleEdit=(index)=>{
+          
+// setInput();
+//     }
     return (
         <>
             <ul>
@@ -29,6 +34,7 @@ const TodoApp = () => {
                             <li key={index}>
                                 {todo}
                                 <button onClick={handleDelete}>Delete</button>
+                                {/* <button onClick={handleEdit}>Edit</button> */}
                             </li>
                         ))
                     }
