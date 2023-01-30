@@ -4,6 +4,7 @@ import CompA from "./ContextTopic/CompA"
 import Main from "./Modal/Main";
 import Timer from "./Timer/Timer"
 import "./Modal/style.css";
+import Pagination from "./pagination/Pagination";
 
 const context = createContext();
 
@@ -26,6 +27,9 @@ function App() {
         </li>
         <li>
           <Timer/>
+        </li>
+        <li>
+          <Pagination/>
         </li>
         <li>
         {/* Modal */}

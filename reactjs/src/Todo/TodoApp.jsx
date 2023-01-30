@@ -4,22 +4,27 @@ const TodoApp = () => {
     const [todo, setTodo] = useState([]);
     const [input, setInput] = useState("");
 
+    // addition operation
     const handleSubmit = (e) => {
         e.preventDefault();
         if (input === "") return;
         setTodo([...todo, input])
-        setInput("");      
+        setInput("");
     }
+    // delete operation
     const handleDelete = (index) => {
         const newTodo = [...todo];
         newTodo.splice(index, 1);
         setTodo(newTodo);
     }
-    // try
-//     const handleEdit=(index)=>{
-          
-// setInput();
-//     }
+    // edit operation
+    const handleEdit = (index) => {
+        const newTodo = [...todo];
+        const editedTodo = prompt('Enter the updated todo', newTodo[index]);
+        newTodo[index] = editedTodo;
+        setTodo(newTodo);
+    }
+
     return (
         <>
             <ul>
@@ -35,6 +40,7 @@ const TodoApp = () => {
                                 {todo}
                                 <button onClick={handleDelete}>Delete</button>
                                 {/* <button onClick={handleEdit}>Edit</button> */}
+                                <button onClick={() => handleEdit(index)}>Edit</button>
                             </li>
                         ))
                     }
