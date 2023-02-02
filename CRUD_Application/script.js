@@ -79,6 +79,7 @@ submitBtn.addEventListener("click", (e) => {
     localStorage.setItem("userData", JSON.stringify(arr));
     setLocalStorage();
     alert("Data added successfully");
+ 
   } else {
     alert("Empty todo can't be submitted");
   }

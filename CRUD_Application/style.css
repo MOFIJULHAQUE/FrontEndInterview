@@ -3,7 +3,9 @@
   margin: 0%;
   background-color: rgb(245, 249, 248);
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,40 +14,73 @@
   justify-content: center;
   align-content: space-between;
   height: 100vh;
+  width: 96.93vw;
+  background: linear-gradient(rgb(171, 171, 250), rgb(157, 248, 157))
 }
+
 form {
   margin-bottom: 10%;
 }
+
+h1 {
+  background: transparent;
+}
+
 .container form input {
+
   margin: 2%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid black;
+  width: 15rem;
+
 }
+
+#submitBtn {
+  width: 8rem;
+}
+
+#submitBtn:hover {
+  /* width: 8rem; */
+  background: linear-gradient(rgb(246, 246, 216), rgb(174, 239, 174));
+}
+
 .container form input:hover {
   border-color: blue;
 }
+
+
 .container form input:focus {
   outline: none;
 }
+
+
 .btn input {
   cursor: pointer;
 }
 
+
 .newData {
   padding: 0%;
-  width: 450px;
+  width: 30rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 4%;
+  border: 2px solid black;
+  padding: 1rem 2rem 1rem 4rem;
 }
+
+
 .inside_newData {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background: transparent;
 }
+
+
 .name {
   border: 0.1px solid black;
   padding: 2%;
@@ -54,6 +89,8 @@ form {
   width: 150px;
   margin-left: -2rem;
 }
+
+
 .name1 {
   border: 0.1px solid black;
   padding: 2%;
@@ -61,22 +98,57 @@ form {
   color: rgb(0, 0, 0);
   width: 150px;
 }
+
+
 .newData button {
   padding: 2%;
   border-radius: 5px;
   border: none;
 }
 
+
 .btn {
   display: flex;
   justify-content: center;
+  background: transparent;
 }
+
 
 .inside_newData button {
   background-color: rgb(110, 226, 239);
   font-weight: bold;
   cursor: pointer;
 }
+
+
 .inside_newData button:hover {
   background-color: rgb(44, 186, 113);
+}
+
+/* 
+ */
+.contact__details {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__details i {
+  background: transparent;
+  color: black;
+}
+
+.contact__details a {
+  background: transparent;
+ 
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.contact__details i:hover {
+  color: rgb(12, 61, 145);
 }

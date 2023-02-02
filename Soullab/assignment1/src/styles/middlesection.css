@@ -1,0 +1,85 @@
+.middle__section {
+    /* width: fit-content; */
+    height: 102%;
+    /* background-color: rgb(247, 148, 148); */
+    margin: -0.6% 0% 0% 5.6%;
+    padding: 2rem 1rem 2rem 5rem;
+
+}
+
+.name__email--photo {
+    text-align: center;
+    line-height: 20%;
+
+}
+
+.name__email--photo h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.past_upcoming--section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 10%;
+    text-align: center;
+    padding: 0px 14px 0px 14px;
+    
+}
+
+.past_upcoming--section h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.past_upcoming--section p {
+    font-size: 12px;
+    color: #6B6B6B;
+
+}
+
+.border {
+    border-right: 1px solid rgb(159, 149, 149);
+    height: 28px;
+}
+
+.profile__section--middle {
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+.profile__section--middle p {
+
+    height: 18px;
+    text-align: center;
+    border: 1px solid #6B6B6B;
+
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+
+
+
+}
+
+.inside__profile__section--bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.inside__profile__section--bottom .innermost__profile__section--bottom {
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 0rem 1rem 0rem 1rem;
+
+}
+
+.inside__profile__section--bottom .innermost__profile__section--bottom img {
+    height: 19px;
+    margin-right: 1rem;
+}
+
+
