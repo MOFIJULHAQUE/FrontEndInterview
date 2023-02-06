@@ -54,15 +54,22 @@
 
 //========================================================================================
 //Find the first repeating element in an array.
-function findFirstRepeating(arr) {
-    // let map = {};
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== undefined) {
-            return arr[i];
-        }
-        else {
-            arr[i] = i;
-        }
-    }
-}
-console.log(findFirstRepeating([1, 1, 3, 1, 5, 5, 2, 6, 4, 7]));
+// function findFirstRepeating(arr) {
+//     // let map = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== undefined) {
+//             return arr[i];
+//         }
+//         else {
+//             arr[i] = i;
+//         }
+//     }
+// }
+// console.log(findFirstRepeating([1, 1, 3, 1, 5, 5, 2, 6, 4, 7]));
+
+
+// Remove repating elements from array
+// let arr = [1,2,4,2,1,4,8,5,4];
+
+// let newArr = new Set(...[arr])
+// console.log(newArr);
