@@ -6,10 +6,10 @@
 
 
 // function getData(callback) {
-//     // code to retrieve data from server
+    // code to retrieve data from server
 //     let data = "Retrieved Data";
 
-//     // execute callback function with data as the argument
+    // execute callback function with data as the argument
 //     callback(data);
 //   }
 
